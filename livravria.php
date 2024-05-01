@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/Café e livro 25.PNG">
 </head>
-<body class="container-fluid">
-
+<body>
     <header>
         <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="#">Livraria Online</a>
@@ -32,7 +31,7 @@
         </nav>
     </header>
 
-    <section class="">
+    <section class="container mt-5">
         <h1>Bem-vindo à Livraria Online</h1>
         <p>Encontre os melhores livros aqui!</p>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -88,6 +87,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Seu arquivo JavaScript personalizado -->
     <script src="scripts.js"></script>
-
 </body>
 </html>
