@@ -1,0 +1,21 @@
+nav{
+    background-color: rgb(200, 160, 160);
+}
+
+body{
+    background-color: rgb(211, 185, 185);
+}
+
+navbar-brand{
+    background-color: #fff;
+}
+
+
+.carousel{
+    width: 1000px;
+}
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
+}

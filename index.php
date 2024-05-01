@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria Online</title>
-    <!-- Inclua os arquivos CSS do Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Seu arquivo CSS personalizado -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Café e livro 25.PNG">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg ">
             <a class="navbar-brand" href="#">Livraria Online</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,7 +24,7 @@
                         <a class="nav-link" href="#">Livros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=85997665652">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -35,6 +34,46 @@
     <section class="container mt-5">
         <h1>Bem-vindo à Livraria Online</h1>
         <p>Encontre os melhores livros aqui!</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/19050255-vista-lateral-de-livros-de-leitura-de-estudante-do-sexo-masculino-na-biblioteca-gratis-foto.jpg" alt="Primeiro Slide"> 
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size:30px;">Bem-Vindo</h5>
+                        <p style="font-size:25px;">Perdido nas páginas, encontrando mundos além da imaginação</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/pexels-photo-5852461.jpeg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size:30px;">Caminhos Literários</h5>
+                        <p style="font-size:25px;">Viaje sem sair do lugar, apenas abrindo um livro.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/pexels-rethaferguson-3060324.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size:30px;">Trilhas de Papel</h5>
+                        <p style="font-size:25px;">Caminhe por caminhos literários que nunca se apagam.</p>
+                    </div>
+                </div>      
+            
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+            </div>
+        </div> 
         <!-- Adicione mais conteúdo aqui, como listagem de livros, formulários de pesquisa, etc. -->
     </section>
 
