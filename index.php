@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria Online</title>
+    <title>Café e leitura</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/Café e livro 25.PNG">
 </head>
-<body class="container-fluid">
+<body>
 
     <header>
         <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#">Livraria Online</a>
+            <a class="navbar-brand" href="#">Café e leitura</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="search-box">
+                <input class="input-icon" type="text" placeholder="O que você está buscando?">
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="index.php">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Livros</a>
+                        <a class="nav-link" href="livravria.php">Livros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#modalExemplo" data-toggle="modal" data-target=".bd-example-modal-xl" class="nav-link">Cadastro</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://api.whatsapp.com/send?phone=85997665652">Contato</a>
@@ -32,9 +38,10 @@
         </nav>
     </header>
 
-    <section class="">
-        <h1>Bem-vindo à Livraria Online</h1>
-        <p>Encontre os melhores livros aqui!</p>
+        <div class="jumbotron" style="background-image: url(img/download-de-livros-gratis-scaled.webp);">
+            <h1 id="title" class="display-4 titulo0">Bem-vindo à Livraria Online</h1>
+            <p id="subtitle" class="lead titulo1">Encontre os melhores livros aqui!</p>
+         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -88,6 +95,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Seu arquivo JavaScript personalizado -->
     <script src="scripts.js"></script>
+
+    <?php require_once('Modal/cadastro.php') ?>
 
 </body>
 </html>
