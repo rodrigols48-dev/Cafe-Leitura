@@ -30,7 +30,7 @@ navbar-brand{
 .search-box {
     display: flex;
     width: 400px;
-    margin-left: 280px;
+    margin-left: 540px;
 }
   
 .search-box input[type="text"] {

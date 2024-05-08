@@ -17,8 +17,9 @@ require_once('../BackEnd/Conexao.php');
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg ">
-      <a class="navbar-brand" href="#">Café e leitura</a>
+    <nav class="navbar navbar-expand-lg">
+      <img src="img/CAFEEEE.png" width="50" >
+      <a class="navbar-brand"  href="#">Café e leitura</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,10 +32,13 @@ require_once('../BackEnd/Conexao.php');
             <a class="nav-link" href="index.php">Início</a>
           </li>
           <li class="nav-item">
-            <a href="#modallivros" data-toggle="modal" class="nav-link">Cadastro</a>
+            <a href="#modallivros" data-toggle="modal" class="nav-link">Cadastro  </a>
           </li>
           <li class="nav-item">
             <a href="#modalusuarios" data-toggle="modal" class="nav-link">Usuarios</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.php"  class="nav-link">Login</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://api.whatsapp.com/send?phone=85997665652">Contato</a>

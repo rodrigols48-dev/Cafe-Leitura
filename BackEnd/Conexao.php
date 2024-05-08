@@ -11,7 +11,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Conexão falhou: " . $conn->connect_error);
 }
-echo "Conexão bem sucedida";
 
 // Verificar se o formulário foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -70,8 +69,6 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "ID: " . $row["codigo_usuario"]. " - Nome: " . $row["nome"]. "<br>";
   }
-} else {
-  echo "0 resultados";
 }
 $conn->close();
 
