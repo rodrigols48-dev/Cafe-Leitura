@@ -35,6 +35,25 @@ nome.addEventListener('keyup', () => {
   }
 })
 
+document.getElementById('form-usuario').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  var xhr = new XMLHttpRequest();
+  var formData = new FormData(this);
+
+  xhr.open('POST', window.location.href, true); 
+  
+  xhr.onload = function() {
+    if (this.status == 200) {
+      console.log(this.responseText);
+    } else {
+      console.error('Erro na requisição');
+    }
+  };
+
+  xhr.send(formData);
+});
+
 usuario.addEventListener('keyup', () => {
   if(usuario.value.length <= 4){
     labelUsuario.setAttribute('style', 'color: red')

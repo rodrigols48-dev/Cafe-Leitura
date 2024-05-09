@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -34,6 +36,7 @@ $conn->close();
 <head>
 <html lang="pt-br">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="./css/cadastro.css">    
 </head>
 
@@ -47,34 +50,34 @@ $conn->close();
 
       <form id="form-usuario">
 
-         <div class="label-float">
-            <input type="text" id="nome" name="nome" placeholder=" " required>
+         <div class="label-float form-group">
             <label id="labelNome" for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class='form-control' placeholder=" " required>
          </div>
 
          <div class="label-float">
-            <input type="text" id="email" name="email" placeholder=" " required>
             <label for="email">Email</label>
+            <input type="text" id="email" name="email"  placeholder=" " required>
          </div>
 
          <div class="label-float">
-            <input type="text" id="telefone" name="telefone" placeholder=" " required>
             <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder=" " required>
          </div>
 
          <div class="label-float">
-            <input type="text" id="CPF" name="CPF" placeholder=" " required>
             <label for="CPF">CPF</label>
+            <input type="text" id="CPF" name="CPF" placeholder=" " required>
          </div>
 
          <div class="label-float">
-            <input type="text" id="endereco" name="endereco" placeholder=" " required>
             <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder=" " required>
          </div>
 
-         <div class="label-float">
-            <input type="date" id="data_nascimento" name="data_nascimento" placeholder=" " required>
+         <div class="label-float form-group">
             <label for="data_nascimento">Nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" placeholder=" " required>
          </div>
 
          <div class='justify-center'>
