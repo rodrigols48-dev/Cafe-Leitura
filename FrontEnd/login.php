@@ -33,16 +33,12 @@
           <button onclick="entrar()">Entrar</button>
         </div>
 
-        <p>
-          Não tem uma conta?
-          <a href="cadastro.php">
-            Cadastre-se
-          </a>
-        </p>
       </div>
-    </div>
+
+    </div>    
 
     <script src="../js/login.js"></script>
+    
   </body>
  
 </html>

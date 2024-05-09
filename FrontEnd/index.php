@@ -35,7 +35,7 @@ require_once('../BackEnd/Conexao.php');
             <a href="#modallivros" data-toggle="modal" class="nav-link">Cadastro  </a>
           </li>
           <li class="nav-item">
-            <a href="#modalusuarios" data-toggle="modal" class="nav-link">Usuarios</a>
+            <a href="cadastro.php" class="nav-link">Usuarios</a>
           </li>
           <li class="nav-item">
             <a href="login.php"  class="nav-link">Login</a>

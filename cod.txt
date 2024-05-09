@@ -1,0 +1,12 @@
+ALTER TABLE usuarios MODIFY COLUMN id INT auto_increment;
+
+$sql = "SELECT * FROM usuarios WHERE id = $id";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // Atualiza o registro existente
+  $sql = "UPDATE usuarios SET ... WHERE id = $id";
+} else {
+  // Insere um novo registro
+  $sql = "INSERT INTO usuarios ...";
+}
